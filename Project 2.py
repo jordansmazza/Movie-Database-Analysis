@@ -17,7 +17,7 @@ df.replace(0, np.nan, inplace=True)
 df.dropna(axis=0, how='any', inplace=True)
 ## print(df.isna().any())
 ## print(df.describe())
-## print(df.shape)
+print(df.shape)
 
 # checking for and dropping duplicates
 ## print(df[df.duplicated()])
