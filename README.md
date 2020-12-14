@@ -60,4 +60,17 @@ My hypothesis about movie runtimes increasing overtime was proven wrong. It seem
 
 My final plot shows the visualization for my fourth question – a chart of directors with - on average - the highest grossing movies. Interestingly enough, many of the directors in this top ten list directed animated movies like Pixar and DreamWorks movies. This could be valuable for production companies to know because it shows there is a lot of money and return on investment in animated movies.
 
+---
+## Limitations
+For the first two analyses, we must be careful when coming to conclusions because it seems to greatly depend on how a movie’s success is defined. Movie ratings are not affected by the budget or release season of the movie. If I were to just use this variable to measure success, I would see there was absolutely no relationship. However, it is clear – particularly when looking at release season – that a movie’s success could be influenced by these two variables. Ideally more analyses and testing should be done before anything is concluded about a movie's budget and release season influencing a movie's success.
 
+For this project, I used the budget and revenue columns rather than the adjusted budget and revenue columns, which adjusts for inflation. This is also important to keep in mind because inflation could potentially have an effect on these variables and provide different results.
+
+For the third question in my project, I grouped the movie runtime’s by year and then took the average for each year. I also performed a similar function for my final question. It’s important to note anytime you use an average, to be wary of the results because there could be outliers affecting the mean that could skew the final results.
+
+For my final analysis, I debated separating out the directors for each value that had multiple directors in the column; however, I decided to keep the column as is. From the viewpoint of a production company, it would be helpful to know what conditions a director is most successful under. Perhaps there is a director who doesn’t make high grossing movies alone, but when paired with someone else is very successful. This information could be valuable, and for that reason, I left the director teams in my analysis. While I chose to leave this in for this project, it could also influence the result of the analysis, so it's important to note that more analyses should be run on these directors to ensure this data is accurate.
+
+## Sources
+- [Creating Season Column](https://stackoverflow.com/questions/16139306/determine-season-given-timestamp-in-python-using-datetime/53694615)
+- [Adding Floating Zero for Season Function](https://stackoverflow.com/questions/733454/best-way-to-format-integer-as-string-with-leading-zeros)
+- [Dropping Rows with Zeros](https://stackoverflow.com/questions/22649693/drop-rows-with-all-zeros-in-pandas-data-frame)
