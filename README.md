@@ -33,3 +33,9 @@ I then checked for any null values. Only 10 null values popped up originally, so
 While the runtime column only has 31 missing values, both the budget and revenue column had a significant amount of missing data. Since over half the rows in these columns had missing data, filling these with the mean could drastically skew the data. Because of this, removed all rows with missing data. Even though this cut my dataset by over half, I decided having a smaller, more accurate dataset would be better than a heavily skewed one.
 
 To do this, I replaced all 0 values with null values so I could drop them using .dropna(). I got this solution from a Stack Overflow thread (linked below). I then I checked for and dropped any duplicates.
+
+---
+## Adding a Seasons Column
+The first step that needed to be done to answer my second research regarding the relationship between a movie's release season and its success was making the `release_date` column into a datetime dtype.
+
+After doing a lot of research and reading many stackoverflow threads (linked below), I was able to create an if statement that extracted the season from the `release_date` column in the dataset. First, I transformed the month and day into strings so I could append them onto one another. I had to add a floating zero onto the day variable so dates like July 7th would read 707 rather than 77 (stackoverflow for this solution linked below). Then, I created a variable that consisted of the appended month and day and transformed it back into an integer so I could perform Boolean statements on it. From there I created an if statement that filtered each date in its respective season. I then assigned this to a new column called `release_season`.
