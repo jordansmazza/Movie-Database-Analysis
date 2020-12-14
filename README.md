@@ -39,3 +39,16 @@ To do this, I replaced all 0 values with null values so I could drop them using 
 The first step that needed to be done to answer my second research regarding the relationship between a movie's release season and its success was making the `release_date` column into a datetime dtype.
 
 After doing a lot of research and reading many stackoverflow threads (linked below), I was able to create an if statement that extracted the season from the `release_date` column in the dataset. First, I transformed the month and day into strings so I could append them onto one another. I had to add a floating zero onto the day variable so dates like July 7th would read 707 rather than 77 (stackoverflow for this solution linked below). Then, I created a variable that consisted of the appended month and day and transformed it back into an integer so I could perform Boolean statements on it. From there I created an if statement that filtered each date in its respective season. I then assigned this to a new column called `release_season`.
+
+---
+## Analysis
+For my first analysis, I made two scatterplots to see the relationship between a movie's budget and its success. In the first scatterplot, a movie’s success is measured with the movie’s rating while the second scatterplot, success is measured with the movie’s revenue. I wanted to explore both measures of success to see if they showed similar results.
+
+For my second analysis, I used bar graphs to show a movie’s success per season. Again, I created two bar graphs, the first using success as the movie’s rating and the second as the movie’s revenue. Since seasons are a categorical variable, a bar chart better suits this analysis in comparison to a line chart or scatter plot.
+
+My third analysis is a line plot showing how movie runtimes have changed over time. I used a line plot because this plot type is best suited for showing changes over time. Since each year in the dataframe has multiple runtime entries, the first time I tried to plot this it was unreadable. So, I grouped the dataset by year and then took the average runtime to create a more coherent visualization.
+
+Finally, for my last analysis, I performed a similar grouping method. From this method, I was able to group by directors and find the average movie revenue for the movies they directed. Since there were thousands of directors, I also sorted by the revenue column in descending order and used only the first 10 inputs. This gave me the top ten directors/director teams with the highest grossing films. I used a bar chart for this visualization because the director column is categorical.
+
+
+
