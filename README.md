@@ -26,3 +26,10 @@ For this analysis a movie's success is defined in two ways, the first is by a mo
 
 ---
 ## Data Cleaning
+After importing this dataset, I printed the head of the dataframe and decided to remove some columns I knew I would not be using.
+
+I then checked for any null values. Only 10 null values popped up originally, so I dropped those rows. To double check, I used .describe() to analyze the dataset. I noticed the budget, revenue, and runtime columns all had minimums of zero, meaning missing values. I used the .shape function to see how many rows had zero values for each column.
+
+While the runtime column only has 31 missing values, both the budget and revenue column had a significant amount of missing data. Since over half the rows in these columns had missing data, filling these with the mean could drastically skew the data. Because of this, removed all rows with missing data. Even though this cut my dataset by over half, I decided having a smaller, more accurate dataset would be better than a heavily skewed one.
+
+To do this, I replaced all 0 values with null values so I could drop them using .dropna(). I got this solution from a Stack Overflow thread (linked below). I then I checked for and dropped any duplicates.
