@@ -50,5 +50,14 @@ My third analysis is a line plot showing how movie runtimes have changed over ti
 
 Finally, for my last analysis, I performed a similar grouping method. From this method, I was able to group by directors and find the average movie revenue for the movies they directed. Since there were thousands of directors, I also sorted by the revenue column in descending order and used only the first 10 inputs. This gave me the top ten directors/director teams with the highest grossing films. I used a bar chart for this visualization because the director column is categorical.
 
+---
+## Conclusions
+In my first plot, it doesn’t seem like there is any correlation between movie budget and success as even high budget movies were rated similarly to low budget movies. Looking at the second scatterplot, however, there does seem to be a loose correlation between movie budget and revenue, where the higher the budget, the higher the revenue. Neither of these scatter plots show a significant correlation between the variables, so more analysis would be required before coming to any conclusions.
+
+In regard to my second question using the release season and movie success variable, I got surprising results. I went into this analysis expecting summer releases to be the most successful category; however, as seen below, this is not the case. When using revenue as the success variable, it is clear that movies released in the Fall seem to be much more successful than any other season. Again, when you compare these results to the bar chart where success is defined as movie ratings, the release season seems to have no effect.
+
+My hypothesis about movie runtimes increasing overtime was proven wrong. It seems movie times have actually significantly decreased from the 1960's onward. This shows the importance of research and visualization. If I had not performed this analysis, I would have made a blatantly incorrect assumption about runtime trends over time.
+
+My final plot shows the visualization for my fourth question – a chart of directors with - on average - the highest grossing movies. Interestingly enough, many of the directors in this top ten list directed animated movies like Pixar and DreamWorks movies. This could be valuable for production companies to know because it shows there is a lot of money and return on investment in animated movies.
 
 
